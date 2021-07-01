@@ -2,7 +2,7 @@ package ltq.mc;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class PluginMain extends JavaPlugin{
+public class BoxSortPlugin extends JavaPlugin{
 
 	@Override
 	public void onDisable() {

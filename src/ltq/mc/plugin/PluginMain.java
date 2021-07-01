@@ -3,6 +3,7 @@ package ltq.mc.plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import ltq.mc.commands.*;
+import ltq.mc.listener.BoxSort;
 
 public class PluginMain extends JavaPlugin{
 
@@ -12,8 +13,10 @@ public class PluginMain extends JavaPlugin{
 	
 	@Override
 	public void onEnable() {
+		// 注册test命令
 		this.getCommand("test").setExecutor(new Test());
-		getLogger().info("install [test]");
+		// 注册箱子排序
+		getServer().getPluginManager().registerEvents(new BoxSort(), this);
 	}
 
 }

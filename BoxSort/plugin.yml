@@ -1,4 +1,4 @@
-name: MCPlugin
+name: LTQPlugin
 main: ltq.mc.BoxSortPlugin
 version: 1.0
 api-version: 1.16

@@ -81,7 +81,7 @@ public class BoxSort implements Listener{
 
 	/**
 	 * 监听容器点击事件
-	 * @param e
+	 * @param e 容器点击事件
 	 */
 	@EventHandler
 	public void onClick(InventoryClickEvent e) {

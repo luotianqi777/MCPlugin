@@ -1,0 +1,8 @@
+name: Plugin
+main: ltq.mc.plugin.PluginMain
+version: 1.0-Alpha
+api-version: 1.16.2
+commands: 
+    test: 
+        description: test command
+        usage: /test

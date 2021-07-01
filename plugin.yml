@@ -1,4 +1,3 @@
 name: Plugin
-main: ltq.mc.plugin.PluginMain
+main: ltq.mc.plugin
 version: 1.0-Alpha
-api-version: 1.16.2

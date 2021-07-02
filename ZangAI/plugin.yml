@@ -1,0 +1,9 @@
+name: ZangAiPlugin
+main: ltq.mc.ZangAiPlugin
+version: 1.0
+api-version: 1.16
+author: ltq
+commands:
+    za:
+        description: translate text to zang ai font
+        usage: /za text

@@ -8,7 +8,7 @@ public class ZangAiPlugin extends JavaPlugin {
      * 激活插件
      */
     public void onEnable() {
-        getLogger().info("load plugin [ZangAi] succuss");
         getCommand("za").setExecutor(new ZangAi());
+        getLogger().info("load plugin [ZangAi] succuss");
     }
 }

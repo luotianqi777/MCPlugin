@@ -8,10 +8,25 @@ import org.bukkit.entity.Player;
 
 public class ZangAi implements CommandExecutor{
 
+	/**
+	 * 发送消息给所有玩家
+	 * @param message 发送的消息
+	 */
+	public void SendMessage(String message){
+		for (Player player : Bukkit.getOnlinePlayers()){
+			player.sendMessage(message);
+		}
+	}
+
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String arg, String[] args) {
 		Player player = Bukkit.getPlayer(sender.getName());
-		player.sendRawMessage(ZangAiTranslator.Translate(arg));
+		StringBuilder message = new StringBuilder();
+		message.append(player.getName() + ": ");
+		for (String s : args){
+			message.append(s);
+		}
+		player.sendRawMessage(ZangAiTranslator.Translate(message.toString()));
 		return true;
 	}
 }

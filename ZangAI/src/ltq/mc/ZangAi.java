@@ -16,17 +16,17 @@ public class ZangAi implements CommandExecutor{
 		for (Player player : Bukkit.getOnlinePlayers()){
 			player.sendMessage(message);
 		}
+		Bukkit.getLogger().info(message);
 	}
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String arg, String[] args) {
-		Player player = Bukkit.getPlayer(sender.getName());
 		StringBuilder message = new StringBuilder();
-		message.append(player.getName() + ": ");
+		message.append(sender.getName() + ": ");
 		for (String s : args){
 			message.append(s);
 		}
-		player.sendRawMessage(ZangAiTranslator.Translate(message.toString()));
+		SendMessage(ZangAiTranslator.Translate(message.toString()));
 		return true;
 	}
 }

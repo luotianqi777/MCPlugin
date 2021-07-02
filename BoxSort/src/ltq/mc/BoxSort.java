@@ -61,14 +61,13 @@ public class BoxSort implements Listener{
 	public void sortPlayer(Inventory inventory) {
 		ItemStack[] content = inventory.getContents().clone();
 		inventory.clear();
-		// 物品栏下标
-		int index = 0;
 		// 工具栏排序
 		for (ItemStack item : sort(content, 0, 9)) {
-			inventory.setItem(index, item);
-			index++;
+			inventory.addItem(item);
 		}
-		// 背包栏排序
+		// 物品栏下标
+		int index = 9;
+		// 物品栏排序
 		for (ItemStack item: sort(content, 9, 36)) {
 			inventory.setItem(index, item);
 			index++;

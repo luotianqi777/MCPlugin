@@ -1,12 +1,24 @@
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.block.BlockIgniteEvent;
+import org.bukkit.event.block.BlockIgniteEvent.IgniteCause;
 
-public class SuperBoat implements CommandExecutor{
+public class SuperBoat implements org.bukkit.event.Listener{
 
-	@Override
-	public boolean onCommand(CommandSender arg0, Command arg1, String arg2, String[] arg3) {
-		return true;
+	@EventHandler
+	/**
+	 * 监听点燃事件
+	 * @param e 点燃事件
+	 */
+	public void OnFire(BlockIgniteEvent e){
+		// 被岩浆点燃
+		if (e.getCause() == IgniteCause.LAVA){
+			for (Player player : Bukkit.getOnlinePlayers()){
+				player.sendMessage("something be fired by lava!");
+			}
+			// 取消事件
+			e.setCancelled(true);
+		}
 	}
-	
 }

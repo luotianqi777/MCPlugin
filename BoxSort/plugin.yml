@@ -1,5 +1,5 @@
 name: BoxSortPlugin
-main: ltq.mc.BoxSortPlugin
+main: BoxSortPlugin
 version: 1.0
 api-version: 1.16
-author: ltq
+author: lain

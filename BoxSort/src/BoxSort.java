@@ -1,5 +1,3 @@
-package ltq.mc;
-
 import java.util.Comparator;
 import java.util.LinkedList;
 

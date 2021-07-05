@@ -1,5 +1,3 @@
-package ltq.mc;
-
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BoxSortPlugin extends JavaPlugin{

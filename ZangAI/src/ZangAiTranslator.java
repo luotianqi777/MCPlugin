@@ -1,5 +1,3 @@
-package ltq.mc;
-
 import java.util.HashMap;
 
 public class ZangAiTranslator{

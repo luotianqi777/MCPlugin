@@ -1,4 +1,4 @@
-set pluginName=BoxSortPlugin.jar
+set pluginName=SuperBoatPlugin.jar
 set targetPath=E:\Project\Java\Spigot\Servers\plugins\
 @REM 编译
 javac -encoding UTF-8 -cp .\lib\*.jar -d . .\src\*.java

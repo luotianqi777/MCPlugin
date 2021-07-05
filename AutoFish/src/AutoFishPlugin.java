@@ -1,4 +1,3 @@
-package ltq.mc;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class AutoFishPlugin extends JavaPlugin{

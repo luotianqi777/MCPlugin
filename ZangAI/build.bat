@@ -1,4 +1,4 @@
-set pluginName=ZangAiPlugin.jar
+set pluginName=ZangAi-1.0.jar
 set targetPath=E:\Project\Java\Spigot\Servers\plugins\
 @REM 编译
 javac -encoding UTF-8 -cp ..\spigot-1.16.2.jar -d . .\src\*.java

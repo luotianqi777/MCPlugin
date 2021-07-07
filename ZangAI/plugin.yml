@@ -5,5 +5,5 @@ api-version: 1.16
 author: lain
 commands:
     za:
-        description: translate text to zang ai font
+        description: 将文字翻译为葬爱火星文
         usage: /za text

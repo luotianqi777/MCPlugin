@@ -1,0 +1,12 @@
+name: ImageDrawer
+main: ImageDrawerPlugin
+version: 1.0
+api-version: 1.16
+author: lain
+commands:
+  draw:
+    description: 画一张画
+    usage: /draw {image_url}
+  colors:
+    description: 展示颜色空间
+    usage: /colors

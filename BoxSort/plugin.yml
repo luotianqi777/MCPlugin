@@ -1,4 +1,4 @@
-name: BoxSortPlugin
+name: BoxSort
 main: BoxSortPlugin
 version: 1.0
 api-version: 1.16

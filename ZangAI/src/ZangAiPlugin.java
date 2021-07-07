@@ -8,6 +8,5 @@ public class ZangAiPlugin extends JavaPlugin {
      */
     public void onEnable() {
         getCommand("za").setExecutor(new ZangAi());
-        getLogger().info("load plugin [ZangAi] succuss");
     }
 }

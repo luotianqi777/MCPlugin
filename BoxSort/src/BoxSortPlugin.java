@@ -6,7 +6,6 @@ public class BoxSortPlugin extends JavaPlugin{
 	public void onEnable() {
 		// 注册箱子排序
 		getServer().getPluginManager().registerEvents(new BoxSort(), this);
-		getLogger().info("load plugin [BoxSort] success");
 	}
 
 }

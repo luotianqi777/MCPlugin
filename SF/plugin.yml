@@ -1,0 +1,15 @@
+name: SF
+main: SFPlugin
+version: 1.0
+api-version: 1.16
+author: lain
+commands:
+    sf:
+        description: 发送副手的物品给其他玩家
+        usage: /sf {player}
+    sfaccept:
+        description: 接受某人的快递请求
+        usage: /sfaccept
+    sfignore:
+        description: 拒绝某人的快递请求
+        usage: /sfignore

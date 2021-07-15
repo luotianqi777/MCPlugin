@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: 
-Class-Path: lib\spigot-1.16.2.jar
-
